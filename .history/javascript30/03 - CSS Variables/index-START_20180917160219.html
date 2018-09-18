@@ -60,8 +60,7 @@
   const inputs = document.querySelectorAll('.controls input');
 
   function handleUpdate(){
-    const suffix = this.dataset.sizing || ''; //data- 로 마크업한 리스트 가져옴
-   document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    console.log(this.value);
   }
 
   inputs.forEach(input => input.addEventListener('change',handleUpdate));
