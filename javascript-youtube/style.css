@@ -12,33 +12,35 @@ p{
 
 body{
     background: #eee;
+    box-sizing: border-box
 }
 
 .container{
-    width: 560px;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     margin: 0 auto;
 }
 
-header, section{
+section{
     position: fixed;
     text-align: center;
-    width: 560px;
+    width: 100%;
+    padding-top: 56.25%;
     background-color: #fff;
 }
 
-section{
-    top: 50px;
+iframe{position: absolute;
+    top: 0;
+    left: 0;
 }
-
 .logo{
  width: 120px;
  padding: 10px;
 }
 
 main{
-    padding: 370px 18px 10px;
+    padding: 58% 18px 100px;
 }
 
 article{
@@ -61,3 +63,9 @@ article:hover{
 .details{
     padding: 8px 22px;
 }
+
+.srch-box{overflow: hidden; position: fixed; bottom:0; width: 100%;box-sizing: border-box;
+padding:5px; background:#eee;
+}
+input{ float: left; width: 80%;padding: 2px;}
+button{float: left;   }

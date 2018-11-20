@@ -39,7 +39,7 @@
       }
     });
 
-    const fifteen2 = inventors.filter(inventors => (inventors.year >= 1500 && inventors.year<1600));
+    // const fifteen2 = inventors.filter(inventors => (inventors.year >= 1500 && inventors.year<1600));
     const fifteen2 = inventors.filter(inventors => {
       if(inventors.year >= 1500 && inventors.year<1600){
         return true;
@@ -63,8 +63,9 @@
     });
 
     const ordered2 = inventors.sort((a,b)=>a.year>b.year ? 1:-1);
-
-    console.table(ordered2);
+    console.log('-----------------------------')
+    console.table(ordered);
+    console.log('-----------------------------')
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
@@ -103,6 +104,7 @@
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 /* const category = document.querySelector('.mw-category');
+const links = category.querySelectorAll('a');
 const links = Array.from(category.querySelectorAll('a'));
 //const links = [...category.querySelectorAll('a')];
 const de = links
@@ -113,6 +115,10 @@ const de = links
     // Sort the people alphabetically by last name
     console.log('%c My check ','color:orange');
 const alpha = people.sort(function(lastOne, nextOne){
+
+  const parts = lastOne.split(', ');
+  console.log(parts);
+  
   //console.log(lastOne);
   const [aLast,aFirst] = lastOne.split(', ');
   const [bLast,bFirst] = nextOne.split(', ');
