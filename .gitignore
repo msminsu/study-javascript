@@ -12,3 +12,4 @@ a.out
 *.a78
 .history/*
 node_modules/
+*package-lock.json
