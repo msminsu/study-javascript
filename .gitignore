@@ -11,3 +11,5 @@ a.out
 # Add in special Atari 7800-based binaries for good measure
 *.a78
 .history/*
+node_modules/
+*package-lock.json
